@@ -1,0 +1,11 @@
+orders_app instance:
+nohup bash -c 'HOST_IP=34.77.71.40 PROJECT_ID=miguelotti-project python -m orders_app.orders_to_db.main' > output.log 2>&1 &
+
+delivery_app instance:
+nohup bash -c 'PROJECT_ID=miguelotti-project python -m delivery_app.main' > output.log 2>&1 &
+
+
+
+
+service-791390352122@gcp-sa-pubsub.iam.gserviceaccount.com
+791390352122-compute@developer.gserviceaccount.com
